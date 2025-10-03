@@ -1,0 +1,102 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "controle do computador",
+      "intents": [
+        {
+          "name": "TurnOnComputerIntent",
+          "slots": [],
+          "samples": [
+            "ligar meu computador",
+            "ligar o computador",
+            "liga o computador",
+            "liga meu computador",
+            "acender o computador",
+            "acender meu computador",
+            "iniciar o computador",
+            "iniciar meu computador",
+            "acordar o computador",
+            "acordar meu computador",
+            "botar pra funcionar o computador",
+            "por o computador pra funcionar"
+          ]
+        },
+        {
+          "name": "TurnOffComputerIntent",
+          "slots": [],
+          "samples": [
+            "desligar meu computador",
+            "desligar o computador",
+            "desliga o computador",
+            "desliga meu computador",
+            "apagar o computador",
+            "apagar meu computador",
+            "shutdown do computador",
+            "fazer shutdown do computador",
+            "parar o computador",
+            "parar meu computador"
+          ]
+        },
+        {
+          "name": "CancelShutdownIntent",
+          "slots": [],
+          "samples": [
+            "cancelar shutdown",
+            "cancelar o shutdown",
+            "cancela o shutdown",
+            "parar shutdown",
+            "parar o shutdown",
+            "para o shutdown",
+            "abortar shutdown",
+            "abortar o shutdown",
+            "não desligar",
+            "não desligue",
+            "não desliga"
+          ]
+        },
+        {
+          "name": "ComputerStatusIntent",
+          "slots": [],
+          "samples": [
+            "verificar status do computador",
+            "verificar o status do computador",
+            "status do computador",
+            "status do meu computador",
+            "como está o computador",
+            "como está meu computador",
+            "o computador está ligado",
+            "meu computador está ligado",
+            "computador está funcionando",
+            "verificar se o computador está ligado",
+            "ver se o computador está funcionando"
+          ]
+        },
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        }
+      ],
+      "types": []
+    },
+    "dialog": {
+      "intents": []
+    },
+    "prompts": []
+  }
+}

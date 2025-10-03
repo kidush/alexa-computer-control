@@ -1,0 +1,83 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "pt-BR": {
+          "summary": "Controle seu computador com comandos de voz",
+          "examplePhrases": [
+            "Alexa, peça para o controle do computador ligar meu computador",
+            "Alexa, peça para o controle do computador desligar meu computador",
+            "Alexa, peça para o controle do computador verificar status do computador"
+          ],
+          "keywords": [
+            "computador",
+            "controle",
+            "energia",
+            "desligar",
+            "ligar",
+            "pc"
+          ],
+          "name": "Controle do Computador",
+          "description": "Controle seu computador remotamente com a Alexa. Ligue ou desligue seu computador, verifique o status e cancele desligamentos com simples comandos de voz. Perfeito para automação residencial e gerenciamento remoto do computador.",
+          "largeLogo": "https://example.com/large-logo.png",
+          "smallLogo": "https://example.com/small-logo.png"
+        },
+        "en-US": {
+          "summary": "Control your computer with voice commands",
+          "examplePhrases": [
+            "Alexa, ask Computer Control to turn on my computer",
+            "Alexa, ask Computer Control to turn off my computer",
+            "Alexa, ask Computer Control to check computer status"
+          ],
+          "keywords": [
+            "computer",
+            "control",
+            "power",
+            "shutdown",
+            "wake",
+            "pc"
+          ],
+          "name": "Computer Control",
+          "description": "Control your computer remotely with Alexa. Turn your computer on or off, check its status, and cancel shutdowns with simple voice commands. Perfect for home automation and remote computer management.",
+          "largeLogo": "https://example.com/large-logo.png",
+          "smallLogo": "https://example.com/small-logo.png"
+        }
+      },
+      "isAvailableWorldwide": false,
+      "testingInstructions": "This skill requires a computer server to be running on your local network. Please follow the setup instructions in the README.",
+      "category": "SMART_HOME",
+      "distributionCountries": ["US", "BR"],
+      "automaticClonedLocale": {
+        "locale": "en-US"
+      }
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "sourceDir": "lambda-function",
+          "uri": "arn:aws:lambda:us-east-1:ACCOUNT_ID:function:computer-control-alexa-skill"
+        },
+        "interfaces": []
+      }
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "locales": {
+        "pt-BR": {
+          "privacyPolicyUrl": "https://example.com/privacy-policy",
+          "termsOfUseUrl": "https://example.com/terms-of-use"
+        },
+        "en-US": {
+          "privacyPolicyUrl": "https://example.com/privacy-policy",
+          "termsOfUseUrl": "https://example.com/terms-of-use"
+        }
+      },
+      "containsAds": false,
+      "isExportCompliant": true,
+      "isChildDirected": false,
+      "usesPersonalInfo": false,
+      "usesHealthInfo": false
+    }
+  }
+}

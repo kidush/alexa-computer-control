@@ -1,0 +1,132 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "controle do computador",
+      "intents": [
+        {
+          "name": "TurnOnComputerIntent",
+          "slots": [],
+          "samples": [
+            "ligar meu computador",
+            "ligar o computador",
+            "liga o computador",
+            "liga meu computador",
+            "acender o computador",
+            "acender meu computador",
+            "iniciar o computador",
+            "iniciar meu computador",
+            "acordar o computador",
+            "acordar meu computador",
+            "turn on my computer",
+            "turn on the computer",
+            "power on my computer",
+            "power on the computer",
+            "start my computer",
+            "start the computer",
+            "boot up my computer",
+            "boot up the computer",
+            "wake up my computer",
+            "wake up the computer"
+          ]
+        },
+        {
+          "name": "TurnOffComputerIntent",
+          "slots": [],
+          "samples": [
+            "desligar meu computador",
+            "desligar o computador",
+            "desliga o computador",
+            "desliga meu computador",
+            "apagar o computador",
+            "apagar meu computador",
+            "shutdown do computador",
+            "fazer shutdown do computador",
+            "turn off my computer",
+            "turn off the computer",
+            "power off my computer", 
+            "power off the computer",
+            "shut down my computer",
+            "shut down the computer",
+            "shutdown my computer",
+            "shutdown the computer",
+            "power down my computer",
+            "power down the computer"
+          ]
+        },
+        {
+          "name": "CancelShutdownIntent",
+          "slots": [],
+          "samples": [
+            "cancelar shutdown",
+            "cancelar o shutdown",
+            "cancela o shutdown",
+            "parar shutdown",
+            "parar o shutdown",
+            "para o shutdown",
+            "abortar shutdown",
+            "abortar o shutdown",
+            "não desligar",
+            "não desligue",
+            "cancel shutdown",
+            "cancel the shutdown",
+            "stop shutdown",
+            "stop the shutdown",
+            "abort shutdown",
+            "abort the shutdown",
+            "don't shutdown",
+            "don't shut down"
+          ]
+        },
+        {
+          "name": "ComputerStatusIntent",
+          "slots": [],
+          "samples": [
+            "verificar status do computador",
+            "verificar o status do computador",
+            "status do computador",
+            "status do meu computador",
+            "como está o computador",
+            "como está meu computador",
+            "o computador está ligado",
+            "meu computador está ligado",
+            "computador está funcionando",
+            "check computer status",
+            "check the computer status",
+            "is my computer on",
+            "is the computer on",
+            "computer status",
+            "status of my computer",
+            "status of the computer",
+            "how is my computer",
+            "how is the computer"
+          ]
+        },
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        }
+      ],
+      "types": []
+    },
+    "dialog": {
+      "intents": []
+    },
+    "prompts": []
+  }
+}
