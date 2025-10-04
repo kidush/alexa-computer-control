@@ -1,0 +1,54 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  Alexa Computer Control
+
+  SAM Template for Alexa Computer Control Lambda function
+
+# More info about Globals: https://github.com/awslabs/serverless-application-model/blob/master/docs/globals.rst
+Globals:
+  Function:
+    Timeout: 30
+    MemorySize: 256
+    Runtime: nodejs18.x
+
+Parameters:
+  ComputerServerUrl:
+    Type: String
+    Default: http://localhost:3000
+    Description: URL of the local computer server
+  ApiKey:
+    Type: String
+    Default: your-secret-api-key-here
+    Description: API key for authentication
+  ComputerMac:
+    Type: String
+    Default: 00:11:22:33:44:55
+    Description: MAC address of the target computer
+
+Resources:
+  ComputerControlFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: lambda-function/
+      Handler: index.handler
+      Architectures:
+        - x86_64
+      Environment:
+        Variables:
+          COMPUTER_SERVER_URL: !Ref ComputerServerUrl
+          API_KEY: !Ref ApiKey
+          COMPUTER_MAC: !Ref ComputerMac
+      Events:
+        AlexaSkillEvent:
+          Type: AlexaSkill
+          Properties:
+            SkillId: !Ref AWS::NoValue
+
+Outputs:
+  ComputerControlFunction:
+    Description: "Alexa Computer Control Lambda Function ARN"
+    Value: !GetAtt ComputerControlFunction.Arn
+  ComputerControlFunctionIamRole:
+    Description: "Implicit IAM Role created for Computer Control function"
+    Value: !GetAtt ComputerControlFunctionRole.Arn

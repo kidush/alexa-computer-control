@@ -110,4 +110,4 @@ settings.local.json
 
 # Build artifacts
 dist/
-build/
+build/env.json
